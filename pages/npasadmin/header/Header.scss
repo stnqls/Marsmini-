@@ -1,0 +1,19 @@
+.admin-header {
+  position: fixed;
+  width: calc(100% - 220px);
+  top: 0;
+  left: 220px;
+  z-index: 9;
+  background-color: #eee;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+  align-items: center;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 900;
+  }
+}

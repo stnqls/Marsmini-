@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+}
+html,
+body {
+  background-color: #eee;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+
+  &__content {
+    margin-left: 232px;
+    width: calc(100% - 232px);
+    padding-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}

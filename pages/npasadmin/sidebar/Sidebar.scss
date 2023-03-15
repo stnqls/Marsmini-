@@ -1,0 +1,94 @@
+.sidebar {
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  background-color: #160f26;
+  z-index: 10;
+  width: auto;
+  -ms-overflow-style: none;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__logo {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 900;
+    height: 80px;
+    text-align: center;
+
+    span {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 190px;
+      height: 1px;
+      margin-top: 24px;
+    }
+  }
+
+  &__logout {
+    display: block;
+    width: 94px;
+    height: 41px;
+    background-color: #6a4ea6;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0 auto 30px;
+    cursor: pointer;
+  }
+
+  &__list {
+    &__item {
+      color: #fff;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 28px;
+      &__title {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+      }
+
+      &__sublist {
+        width: 192px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #333;
+        margin-top: 16px;
+        transform: scaleY(0.1);
+        visibility: hidden;
+        transition: all 0.5s ease;
+        &__subitem {
+          height: 40px;
+          font-size: 14px;
+          font-weight: 700;
+          padding: 8px 16px;
+          box-sizing: border-box;
+          margin: 0 8px;
+          transition: all 0.5s ease;
+          &:hover {
+            background-color: rgba(22, 15, 38, 0.7);
+            cursor: pointer;
+            transform: scale(1.1);
+            color: #fff;
+          }
+        }
+      }
+      .show {
+        visibility: visible;
+        transform: scaleY(1);
+      }
+    }
+  }
+}

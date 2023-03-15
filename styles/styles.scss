@@ -1,0 +1,255 @@
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap");
+
+* {
+  font-family: "NanumSquare", serif, Arial;
+  word-break: keep-all;
+  line-height: 1.6em;
+}
+
+/* global box-sizing */
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  min-width: 1400px;
+  width: 100%;
+}
+
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  transition: opacity 1s;
+  height: 100%;
+  background-color: #140714;
+}
+
+/* clear */
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+pre {
+  word-wrap: break-word;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+// a:focus {
+//   outline: 0;
+// }
+
+// a:hover,
+// a:active {
+//   outline: 0;
+// }
+
+input:focus {
+  outline: 0;
+}
+
+.parents {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: #0aa1ff;
+  color: #232323;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-up {
+  position: relative;
+  animation-duration: 1.2s;
+  animation-name: textUp;
+  animation-timing-function: ease;
+}
+
+@keyframes textUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.zoom-in {
+  position: relative;
+  animation-duration: 1.2s;
+  animation-name: zoomIn;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateY(-2px) translateX(-1px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(1px) translateX(0px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(-2px) translateX(-1px) rotate(2deg);
+  }
+}
+
+.sun-edioter * {
+  font-family: "Noto Sans KR", serif, Arial;
+}
+
+.sun-editor {
+  .se-btn-select {
+    padding: 7px 6px !important;
+  }
+
+  .se-wrapper-wysiwyg {
+    h1 {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    h2 {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 21px;
+      font-weight: 900;
+    }
+    h3 {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    p,
+    span,
+    div {
+      font-family: "Noto Sans KR", serif, Arial;
+      font-size: 17px;
+    }
+  }
+
+  .se-dialog .se-dialog-inner .se-dialog-content {
+    margin-top: 100px !important;
+  }
+}
+
+input[type="password"] {
+  font-family: "Noto Sans KR", serif, Arial;
+}
+
+input[type="password"]::placeholder {
+  font-family: "NanumSquare", serif, Arial;
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    width: 100%;
+    min-width: 360px;
+    overflow-y: scroll;
+    overscroll-behavior: none;
+  }
+
+  body {
+    min-width: 360px;
+    width: 100%;
+    overscroll-behavior: contain;
+  }
+
+  html,
+  body {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    transition: opacity 1s;
+    height: 100vh;
+  }
+}

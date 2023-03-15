@@ -1,0 +1,100 @@
+.invitation-modal {
+  width: 710px;
+  height: 643px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 42px 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  &-cover {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+  &__close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  &__body {
+    margin-top: 15px;
+    position: relative;
+    height: 550px;
+    &__total {
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: right;
+      color: #333;
+    }
+    & > .pagination {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      & > li {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & a {
+          font-size: 15px;
+          color: #6a4ea6;
+          font-weight: 700;
+        }
+      }
+      & > .active {
+        width: 30px;
+        height: 30px;
+        background-color: #6a4ea6;
+        & a {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+.invitation-modal-table {
+  border-collapse: collapse;
+  width: 100%;
+  &__thead {
+    & > tr {
+      height: 48px;
+      background-color: #9e82d9;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      border: 1px solid #9e82d9;
+    }
+  }
+  &__tbody {
+    & > tr {
+      height: 48px;
+      color: #333;
+      font-size: 15px;
+      text-align: center;
+      border: 1px solid #9e82d9;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.admin-game {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.admin-game-show {
+  margin-right: 100px;
+  &__top {
+    color: #6a4ea6;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  &__content {
+    &__point {
+      padding: 19px 20px;
+      width: 450px;
+      height: 60px;
+      background-color: #6a4ea6;
+      color: #fff;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    &__percentage {
+      padding: 19px 20px;
+      width: 450px;
+      height: 60px;
+      background-color: #6a4ea6;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+}
+
+.admin-game-change {
+  &__top {
+    color: #333;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    &__btn {
+      width: 94px;
+      height: 41px;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #6a4ea6;
+      font-weight: 700;
+    }
+  }
+  &__content {
+    &__point {
+      padding: 14px 20px;
+      width: 450px;
+      height: 60px;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      margin-bottom: 20px;
+
+      &__input {
+        border: none;
+        width: 266px;
+        height: 32px;
+        margin-left: 40px;
+        padding: 3px 6px;
+        background-color: #eee;
+      }
+    }
+    &__percentage {
+      padding: 14px 20px;
+      width: 450px;
+      height: 60px;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      &__input {
+        border: none;
+        background-color: #eee;
+        width: 266px;
+        height: 32px;
+        margin-left: 40px;
+        padding: 3px 6px;
+      }
+    }
+  }
+}
